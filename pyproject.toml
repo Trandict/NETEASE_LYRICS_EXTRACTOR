@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "netease-lyrics-extractor"
+version = "1.0.0"
+description = "A powerful tool to extract, format, and align bilingual/trilingual NetEase Cloud Music lyrics into LRC and SRT files."
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT" }
+authors = [
+    { name = "NetEase Lyrics Extractor Contributors" }
+]
+keywords = [
+    "netease",
+    "music",
+    "lyrics",
+    "lrc",
+    "srt",
+    "subtitles",
+    "bilingual",
+    "trilingual",
+    "romaji"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Multimedia :: Sound/Audio",
+]
+
+[project.optional-dependencies]
+build = [
+    "pyinstaller>=5.0.0",
+]
+
+[project.scripts]
+netease-lyrics = "src.main:main"

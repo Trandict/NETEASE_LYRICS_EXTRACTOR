@@ -1,0 +1,8 @@
+# ==============================================================
+# NetEase Lyrics & Subtitle Extractor Dependencies
+# ==============================================================
+# The core application runs entirely on Python Standard Library!
+# No third-party packages are required to run GUI or CLI.
+#
+# Optional: Only needed if you want to package the app into a standalone .exe
+pyinstaller>=5.0.0
